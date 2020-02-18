@@ -1,0 +1,308 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#line{
+    width: 100%;
+    height: 2px;
+    background-color: rgb(206, 206, 19);
+}
+
+
+#backimg{
+    width: 100%;
+    height: 100%;
+    background-image: url(bussyman.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+#backimg #overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#nav{
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    display: flex;
+}
+
+#logoandname{
+    width: 36%;
+    height: 100%;
+    background-color: rgbk(143, 243, 143);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logoandname #logo{
+    width: 100px;
+}
+#logosname{
+    width: fit-content;
+    height: 70px;
+    margin-left: 10px;
+}
+
+#logosname h3{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+#logosname h4{
+   margin-top: 4px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+
+#nav #navbars{
+    width: 64%;
+    height: 100%;;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 100px;
+}
+
+#nav #navbars h4{
+    font-weight: 500;
+}
+
+#nav #navbars #home{
+    border-bottom: 2px solid rgb(214, 218, 15);
+    padding-bottom: 8px;
+    margin-top: 10px;
+}
+
+
+#overlay #container{
+    width: 100%;
+    height: calc(100% - 100px);
+    position: relative;
+}
+
+#container #risponsivbars{
+    width: 100px;
+    height: 26px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+    margin-left: 74%;
+    margin-top: 4px;
+    display: none;
+}
+#container #risponsivbars h4{
+    border-bottom: 1.5px solid white;
+    padding-bottom: 2px;
+    margin-top: 2px;
+}
+#container #risponsivbars i{
+    font-size: 20px;
+}
+
+#overlay #heading{
+    width: 100%;
+    height: 40%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#overlay #heading h3{
+    width: 60%;
+    font-size: 40px;
+    color: white;
+    width: 60%;
+    line-height: 45px;
+    text-align: center;
+  ;
+}
+#overlay #heading p{
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    width: 40%;
+    text-align: center;
+}
+
+#overlay #heading #learnmore{
+    padding: 14px 30px;
+    background-color: rgb(243, 75, 75);
+    border: none;
+    border-radius: 120px;
+
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+#Smartsol{
+    width: 100%;
+    height: 75%;
+    padding: 40px 100px;
+    background-color: rgb(241, 241, 241);
+}
+
+#Smartsolhead{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+#Smartsolhead h3{
+    font-size: 50px;
+    font-weight: 500;
+    margin-top: 0;
+}
+
+#Smartsolbody{
+    width: 100%;
+    height: calc(100% - 100px);
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.Smartsoloption{
+    width: 32%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+}
+
+.Smartsoloption i{
+    font-size: 70px;
+    color: rgb(221, 221, 39);
+}
+
+.Smartsoloption h3{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.Smartsoloption p{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: center;
+    width: 310px;
+}
+
+.Smartsoloption h4{
+    font-weight: 600;
+    color: rgb(247, 9, 9);
+}
+
+#Gratitude{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(204, 204, 24);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Gratitude h4{
+    color: white;
+    font-size: 30px;
+}
+
+
+
+@media(max-width:500px){
+    #backimg #nav{
+        height: 80px;
+    }
+    #backimg #nav #logoandname{
+       width: 100%;
+    }
+    #backimg #nav #logoandname #logo{
+        width: 80px;
+    }
+    #backimg #nav #logoandname #logosname{
+        width: 70%;
+        height: 60px;
+    }
+    #backimg #nav #logoandname #logosname h3{
+        font-size: 20px;
+    }
+    #backimg #nav #logoandname #logosname h4{
+        font-size: 14px;
+    } 
+    #backimg #nav #navbars{
+        display: none;
+    }
+    #backimg #nav #navbars h4{
+        display: none;
+    }
+    #backimg #container{
+        height: calc(100% - 80px);
+    }
+    #backimg #container #risponsivbars{
+        display: flex;
+    }
+    #backimg #container #heading{
+        width: 80%;
+        height: 66%;
+    }
+    #backimg #container #heading h3{
+        font-size: 26px;
+        line-height: 34px;
+        width: 100%;
+    }
+    #backimg #container #heading p{
+        font-size: 14px;
+        width: 100%;
+    }
+
+    #Smartsol{
+        height: 1380px;
+        padding: 20px 5px;
+    }
+    #Smartsol #Smartsolhead{
+        height: 100px;
+    }
+    #Smartsol #Smartsolhead h3{
+        font-size: 26px;
+    }
+    #Smartsol #Smartsolbody{
+        min-height: 1300px;
+        display: inline;
+    }
+    #Smartsol #Smartsolbody .Smartsoloption{
+        width: 100%;
+        height: 400px;
+        margin-bottom: 20px;
+    }
+}
