@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html,body{
@@ -8,99 +9,47 @@ html,body{
     height: 100%;
 }
 
-#akshay{
-    width: 50%;
+.containt{
     height: 100px;
-    background-color: rgb(68, 68, 236);
-    padding-top: 40px;
-    margin-left: 25%;
-    margin-top: 20px;
-    border-radius: 5px;
-}
-
-#akshay h4{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: rgb(212, 212, 212);
-    text-align: center;
-    font-size: 20px;
-}
-
-.bold{
-    font-size: 24px;
-    color: white;
-    
-}
-#back{
     width: 100%;
-    height: 100%;  
-    background: linear-gradient(90deg, rgba(1,48,154,1) 1%, rgba(9,11,166,1) 23%, rgba(226,21,85,1) 100%);
+    background-color: rgb(5, 5, 5);
+    position: relative;
 }
 
-#form{
-    width: 25%;
-    height: 80%;
-    background-color: white;
-    border-radius: 5px;
+.img{
+    width: 100%;
+    height: calc(100% - 100px);
+    background-attachment: fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+   
+}
+
+#img1{
+    background-image: url('https://images.unsplash.com/photo-1580683760725-9ebe77bca9bf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80');
+}
+
+#img2{
+    background-image: url(MS.png);
+}
+h2{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50% , -50%);
-    padding: 20px 40px;
-    display: flex;
-    flex-wrap: wrap;
-    overflow: auto;
+    transform: translate( -50% , -50%);
+
 }
 
-#form h2{
-    font-size: 30px;
-    font-style: oblique;
-    margin: 20px 0px 20px 100px;
-}
+p{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50% , -50%);
 
-form{
-    font-family: sans-serif;
-    font-size: 14px;
-}
-
-form input{
-    outline: none;
-    width: 100%;
-    border: none;
-    border-bottom: 0.8px solid rgb(177, 177, 177);
-    padding: 10px 0px 14px 0px;
-    font-size: 16px;
-    margin-bottom: 30px;
-}
-
-#message{
-    outline: none;
-    width: 100%;
-    border: none;
-    border-bottom: 0.8px solid rgb(177, 177, 177);
-    padding: 10px 0px 14px 0px;
-    font-size: 16px;
-    margin-bottom: 30px;
-}
-
-
-#sub-button{
-    width: 80%;
-    border-radius: 20px;
-    background: linear-gradient(90deg, rgba(212,27,112,1) 0%, rgba(15,41,197,1) 100%, rgba(13,25,212,1) 100%);
-    margin-left: 30px;
-}
-
-@media(max-width:500px){
-    #form{
-        width: 70%;
-        height: 90%;
-    }
-    #form h2{
-        margin-left: 50px;
-        font-size: 24px;
-    }
-    #akshay{
-        width: 90%;
-        margin-left: 20px;
-    }
 }
